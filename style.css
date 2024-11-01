@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #00ffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+.text, h1, h2 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2rem;
+    color: #00ffff;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #c0c0c0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+ /* Dropdown Menu  */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.courses {
+    padding: 2rem;
+    text-align: center;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 300px;
+    background-color: #1719ad;
+}
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+/* Footer Style */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: #b0c4c4;
+    font-size: 1rem;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #88b0b0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d4f1f4;
+}
+
+/* Responsive CSS*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    p, .course, .testimonials blockquote {
+        font-size: 1rem;
+    }
+
+    .course {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+.cta{
+    border: 2px solid rgb(83, 241, 20);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px;
+    background-color: #2eae8874;
+}
+.cta:hover{
+    background-color: #a008ff;
+    transition: 0.8s ease;
+    color: #121212;
+}
